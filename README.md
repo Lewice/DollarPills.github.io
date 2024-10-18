@@ -109,12 +109,12 @@
 
   // Form Submission Logic for Spreadsheet
   $.ajax({
-    url: "FillMe",
+    url: "https://api.apispreadsheets.com/data/PEY6u9Vj0eTzKTwF/",
     type: "post",
     data: formData,
     headers: {
-      accessKey: "FillMe",
-      secretKey: "FillMe",
+      accessKey: "9e8b79eab0afa0de51014d41edaaba91",
+      secretKey: "796fb8622c89b565dc0fa3747872a40e",
       "Content-Type": "application/x-www-form-urlencoded",
     },
     success: function () {
@@ -145,7 +145,7 @@
 
   // Form Submission Logic for Discord webhook
   $.ajax({
-    url: "FillMe", // Replace with your Discord webhook URL
+    url: "https://discord.com/api/webhooks/1296630282862198795/WOoXnHWL61rHo77TXZEwMvHNDyK97W16o-yloY8CtVZvcMsiLfxB-tkzUxPGZ5uRrA_c", // Replace with your Discord webhook URL
     type: "post",
     contentType: "application/json",
     data: JSON.stringify(discordData),
@@ -186,15 +186,38 @@
   <h2>Dollar Pills</h2>
 
   <form id="menuForm">
-	<h3>Items</h3>
+	<h3>Bottles</h3>
 	
 	
     <label>
-      <input type="checkbox" class="menu-item" data-price="5000"> Perscription Oxy - $5,000
+      <input type="checkbox" class="menu-item" data-price="2000"> Perscription Oxy - $2,000
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="1500"> Steriod Injection - $1,500
+      <input type="checkbox" class="menu-item" data-price="7000"> Steriod Injection - $7000
+      <input type="number" class="quantity" value="1" min="1">
+    </label>
+    <label>
+      <input type="checkbox" class="menu-item" data-price="2000"> Zany - $2000
+      <input type="number" class="quantity" value="1" min="1">
+    </label>
+    <label>
+      <input type="checkbox" class="menu-item" data-price="2000"> Adderall - $2000
+      <input type="number" class="quantity" value="1" min="1">
+    </label>
+    <label>
+      <input type="checkbox" class="menu-item" data-price="450"> Wrap Bandages - $450
+      <input type="number" class="quantity" value="1" min="1">
+    </label>
+	
+	<h3>Indivisuals</h3>
+
+    <label>
+      <input type="checkbox" class="menu-item" data-price="450"> Perscription Oxy - $450
+      <input type="number" class="quantity" value="1" min="1">
+    </label>
+    <label>
+      <input type="checkbox" class="menu-item" data-price="1500"> Steriod Injection - $1500
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
@@ -209,7 +232,6 @@
       <input type="checkbox" class="menu-item" data-price="100"> Wrap Bandages - $100
       <input type="number" class="quantity" value="1" min="1">
     </label>
-
 
 	
     
